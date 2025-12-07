@@ -1,3 +1,7 @@
+html, body {
+    overflow-x: hidden;
+}
+
 :root {
     --primary: #1f4f8d;
     --primary-light: #e7f0ff;
@@ -465,3 +469,4 @@ footer {
         display: none; /* simplification mobile */
     }
 }
+
