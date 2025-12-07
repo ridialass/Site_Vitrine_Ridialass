@@ -268,27 +268,38 @@
                     </p>
                 </div>
                 <div class="contact-card">
-                    <form>
-                        <div>
-                            <label for="nom-fr">Nom / Société</label>
-                            <input id="nom-fr" type="text" placeholder="Votre nom ou celui de votre entreprise">
-                        </div>
-                        <div>
-                            <label for="email-fr">E-mail</label>
-                            <input id="email-fr" type="email" placeholder="votre.email@exemple.com">
-                        </div>
-                        <div>
-                            <label for="message-fr">Votre demande</label>
-                            <textarea id="message-fr" placeholder="Décrivez brièvement votre besoin (type de site, lieu, délai, services souhaités)…"></textarea>
-                        </div>
-                        <div>
-                            <button type="submit" class="btn-primary">Envoyer (à configurer)</button>
-                        </div>
-                        <p class="form-note">
-                            Ce formulaire est statique dans cette version. Un envoi réel peut être configuré via un service
-                            comme Formspree, Netlify Forms ou un backend personnalisé.
-                        </p>
-                    </form>
+                    <form action="https://formspree.io/f/xblnajkz" method="POST">
+    <!-- Langue pour t’y retrouver dans les mails -->
+    <input type="hidden" name="lang" value="fr">
+    <!-- Anti-spam (honeypot) -->
+    <input type="text" name="_gotcha" style="display:none">
+
+    <div>
+        <label for="nom-fr">Nom / Société</label>
+        <input id="nom-fr" name="nom" type="text" placeholder="Votre nom ou celui de votre entreprise" required>
+    </div>
+
+    <div>
+        <label for="email-fr">E-mail</label>
+        <input id="email-fr" name="email" type="email" placeholder="votre.email@exemple.com" required>
+    </div>
+
+    <div>
+        <label for="tel-fr">Téléphone (optionnel)</label>
+        <input id="tel-fr" name="telephone" type="tel" placeholder="+33...">
+    </div>
+
+    <div>
+        <label for="message-fr">Votre demande</label>
+        <textarea id="message-fr" name="message" required
+                  placeholder="Décrivez brièvement votre besoin (type de site, lieu, délai, services souhaités)…"></textarea>
+    </div>
+
+    <div>
+        <button type="submit" class="btn-primary">Envoyer ma demande</button>
+    </div>
+</form>
+					
                 </div>
             </div>
         </section>
@@ -555,26 +566,36 @@
                     </p>
                 </div>
                 <div class="contact-card">
-                    <form>
-                        <div>
-                            <label for="name-en">Name / Company</label>
-                            <input id="name-en" type="text" placeholder="Your name or company">
-                        </div>
-                        <div>
-                            <label for="email-en">E-mail</label>
-                            <input id="email-en" type="email" placeholder="your.email@example.com">
-                        </div>
-                        <div>
-                            <label for="message-en">Your request</label>
-                            <textarea id="message-en" placeholder="Briefly describe your project (site type, location, timeframe, required services)…"></textarea>
-                        </div>
-                        <div>
-                            <button type="submit" class="btn-primary">Send (to be configured)</button>
-                        </div>
-                        <p class="form-note">
-                            This form is static in this version. Real submissions can be set up via Formspree, Netlify Forms or a custom backend.
-                        </p>
-                    </form>
+                    <form action="https://formspree.io/f/xblnajkz" method="POST">
+    <input type="hidden" name="lang" value="en">
+    <input type="text" name="_gotcha" style="display:none">
+
+    <div>
+        <label for="name-en">Name / Company</label>
+        <input id="name-en" name="name" type="text" placeholder="Your name or company" required>
+    </div>
+
+    <div>
+        <label for="email-en">E-mail</label>
+        <input id="email-en" name="email" type="email" placeholder="your.email@example.com" required>
+    </div>
+
+    <div>
+        <label for="phone-en">Phone (optional)</label>
+        <input id="phone-en" name="phone" type="tel" placeholder="+33...">
+    </div>
+
+    <div>
+        <label for="message-en">Your request</label>
+        <textarea id="message-en" name="message" required
+                  placeholder="Briefly describe your project (site type, location, timeframe, required services)…"></textarea>
+    </div>
+
+    <div>
+        <button type="submit" class="btn-primary">Send my request</button>
+    </div>
+</form>
+
                 </div>
             </div>
         </section>
@@ -841,26 +862,36 @@
                     </p>
                 </div>
                 <div class="contact-card">
-                    <form>
-                        <div>
-                            <label for="nome-it">Nome / Azienda</label>
-                            <input id="nome-it" type="text" placeholder="Il vostro nome o quello dell’azienda">
-                        </div>
-                        <div>
-                            <label for="email-it">E-mail</label>
-                            <input id="email-it" type="email" placeholder="vostro.email@esempio.com">
-                        </div>
-                        <div>
-                            <label for="messaggio-it">Richiesta</label>
-                            <textarea id="messaggio-it" placeholder="Descrivete brevemente la richiesta (tipo di sito, luogo, tempi, servizi richiesti)…"></textarea>
-                        </div>
-                        <div>
-                            <button type="submit" class="btn-primary">Invia (da configurare)</button>
-                        </div>
-                        <p class="form-note">
-                            Questo form è statico in questa versione. L’invio reale può essere configurato tramite Formspree, Netlify Forms o backend personalizzato.
-                        </p>
-                    </form>
+                    <form action="https://formspree.io/f/xblnajkz" method="POST">
+    <input type="hidden" name="lang" value="it">
+    <input type="text" name="_gotcha" style="display:none">
+
+    <div>
+        <label for="nome-it">Nome / Azienda</label>
+        <input id="nome-it" name="nome" type="text" placeholder="Il vostro nome o quello dell’azienda" required>
+    </div>
+
+    <div>
+        <label for="email-it">E-mail</label>
+        <input id="email-it" name="email" type="email" placeholder="vostro.email@esempio.com" required>
+    </div>
+
+    <div>
+        <label for="telefono-it">Telefono (opzionale)</label>
+        <input id="telefono-it" name="telefono" type="tel" placeholder="+39...">
+    </div>
+
+    <div>
+        <label for="messaggio-it">Richiesta</label>
+        <textarea id="messaggio-it" name="messaggio" required
+                  placeholder="Descrivete brevemente la richiesta (tipo di sito, luogo, tempi, servizi richiesti)…"></textarea>
+    </div>
+
+    <div>
+        <button type="submit" class="btn-primary">Invia la richiesta</button>
+    </div>
+</form>
+
                 </div>
             </div>
         </section>
@@ -901,6 +932,7 @@
 
 </body>
 </html>
+
 
 
 
