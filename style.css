@@ -121,6 +121,21 @@ nav a:hover::after {
     border-color: var(--primary);
 }
 
+.lang-switcher {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center; /* centré par défaut */
+    margin: 1rem auto;
+}
+
+@media (min-width: 768px) {
+    .lang-switcher {
+        justify-content: flex-end; /* à droite sur desktop */
+        margin-right: 1rem;
+    }
+}
+
 /* Hero */
 .hero {
     background: radial-gradient(circle at top left, var(--primary-light), var(--bg));
@@ -469,4 +484,5 @@ footer {
         display: none; /* simplification mobile */
     }
 }
+
 
