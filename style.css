@@ -470,19 +470,44 @@ footer {
 
 /* Responsive */
 @media (max-width: 800px) {
-    .hero-inner {
-        grid-template-columns: 1fr;
-    }
-    .hero-side {
-        order: -1;
-    }
-    .about-layout,
-    .contact-grid {
-        grid-template-columns: 1fr;
-    }
-    nav ul {
-        display: none; /* simplification mobile */
-    }
+  /* Hero : une seule colonne */
+  .hero-inner {
+    grid-template-columns: 1fr;
+    padding: 2rem 1rem 2.5rem;
+  }
+
+  .hero-side {
+    order: -1; /* la carte contact passe au-dessus du texte */
+  }
+
+  .about-layout,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Header + sélecteur de langue sur mobile */
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .logo {
+    width: 100%;
+  }
+
+  /* que ce soit .lang-switch ou .lang-switcher, on le gère ici */
+  .lang-switch,
+  .lang-switcher {
+    align-self: flex-start;
+    justify-content: flex-start;
+    margin: 0;
+  }
+
+  nav ul {
+    display: none; /* pas de menu horizontal sur mobile */
+  }
 }
+
 
 
